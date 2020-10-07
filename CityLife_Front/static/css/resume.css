@@ -1,0 +1,230 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+}
+
+input::-webkit-input-placeholder {
+  /* 字体大小直接写样式即可 */
+  font-size: 12px;
+}
+
+header {
+  position: relative;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 23, 17, .1);
+}
+
+header .header-box {
+  width: 1224px;
+  height: 60px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+header .header-box .logo-nav {
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+header .header-box .logo-nav .logo {
+  display: inline-block;
+  width: 105px;
+  margin-right: 44px;
+  cursor: pointer;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+
+header .header-box .logo-nav .nav-list {
+  display: inline-flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+header .header-box .logo-nav .nav-list .nav-item {
+  margin-right: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #61687c;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+header .header-box .logo-nav .nav-list .nav-item.active, header .header-box .logo-nav .nav-list .nav-item:hover {
+  color: #24827f;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+header .header-box .login-nav {
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+header .header-box .login-nav .nav-user {
+  cursor: pointer;
+  position: relative;
+  min-width: 30px;
+  height: 60px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+header .header-box .login-nav .icon-arrow-down {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+header .header-box .login-nav .nav-user .user-menu {
+  width: 103px;
+  border-radius: 12px;
+  border: 1px solid #e3e7ed;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -65px;
+  z-index: 99999;
+  display: none;
+  overflow: hidden;
+}
+
+header .header-box .login-nav .nav-user:hover {
+  color: #24827f;
+}
+
+header .header-box .login-nav .nav-user .user-menu li {
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #61687c;
+  line-height: 32px;
+  text-align: center;
+}
+
+#container {
+  position: relative;
+}
+
+.resume-container {
+  padding-top: 16px;
+}
+
+.menu-slider, .resume-container {
+  display: flex;
+}
+
+.resume-container .left-sider {
+  position: relative;
+  width: 184px;
+  left: 10%;
+}
+
+.resume-container .left-sider .left-sider-container {
+  position: fixed;
+}
+
+.left-sider-container {
+  z-index: 99;
+}
+
+.container {
+  width: 170px;
+  background: #fff;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  box-shadow: 0 12px 12px -10px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  border: 0 solid #e3e7ed;
+}
+
+.container > h3 {
+  padding-left: 25px;
+  width: 145px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #24272e;
+  line-height: 48px;
+  border-bottom: 1px solid #e3e7ed;
+}
+
+.resume-content {
+  background-color: #f9fbfa !important;
+  width: 720px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding-top: 24px;
+  min-height: 1200px;
+  position: relative;
+  background-color: #fff;
+  border: 0 solid #e3e7ed;
+  box-shadow: 0 12px 12px -10px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  padding: 28px 0;
+  margin: 0 auto;
+}
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  border-color: #24827f !important;
+  outline: 0 !important;
+}
+
+#avatar > .el-form-item__label {
+  width: 200px !important;
+  text-align: left !important;
+  display: block !important;
+}
+
+#avatar > .el-form-item__content {
+  height: 105px !important;
+}
+
+#sex >.el-form-item__content {
+  display: inline-block;
+  width: 300px;
+}
+
+#attach > .el-form-item__content {
+  display: inline-block;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: rgb(36, 130, 127) !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: rgb(36, 130, 127) !important;
+  background: rgb(36, 130, 127) !important;
+}
